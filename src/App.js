@@ -17,11 +17,10 @@ const App = (props) => {
 		<div className='app-wrapper-content'>
 
 			<Route exact path='/profile' 
-				render={ () => <Profile 
-					store={props.store} /> } />
+				render={ () => <Profile /> } />
 
 			<Route path='/dialogs' render={ () => 
-				<DialogsContainer store={props.store} /> } />
+				<DialogsContainer /> } />
 
 			<Route path='/news' render={ () => <News /> } />
 			<Route path='/music' render={ () => <Music /> } />
