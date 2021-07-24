@@ -1,4 +1,3 @@
-import React from "react";
 import profileReducer, { addPostActionCreator, deletePost } from "./profile-reducer";
 
 let state = {
@@ -50,4 +49,3 @@ it(`after deleting length of messages shouldn't be decrement if id is incorrect`
 	// 3.expectation
 	expect(newState.posts.length).toBe(4);
 });
-

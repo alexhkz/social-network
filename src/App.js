@@ -16,13 +16,11 @@ import { initializeApp } from './Redux/app-reducer';
 import Preloader from './components/Common/Preloader/Preloader';
 
 class App extends Component {
-
 	componentDidMount() {
 		this.props.initializeApp();
 	}
 
 	render() {
-		
 		if (!this.props.initialized) {
 			return <Preloader />
 		}
@@ -32,25 +30,18 @@ class App extends Component {
 				<HeaderContainer />
 				<Navbar />
 				<div className='app-wrapper-content'>
-
 					<Route exact path='/profile/:userId?' 
 						render={ () => <ProfileContainer /> } />
-
 					<Route path='/dialogs' 
 						render={ () => <DialogsContainer /> } />
-
 					<Route path='/login' 
 						render={ () => <LoginPage /> } />
-
 					<Route path='/news' 
 						render={ () => <News /> } />
-
 					<Route path='/music' 
 						render={ () => <Music /> } />
-						
 					<Route path='/settings' 
 						render={ () => <Settings /> } />
-
 					<Route path='/users' 
 						render={ () => <UsersContainer /> } />
 				</div>
