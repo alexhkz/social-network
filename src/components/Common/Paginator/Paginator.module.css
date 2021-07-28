@@ -4,9 +4,14 @@
 .pageNumber {
 	padding: 2px;
 	border: 1px solid grey;
+	cursor: pointer;
 }
 
 .pageNumber.selectedPage {
 	font-weight: bold;
 	border-color: black;
+}
+
+.button:hover{
+   cursor: pointer;
 }
